@@ -53,7 +53,7 @@ class ValidatorTest {
 
 	@Test
 	void testCheckLessEquals255() {
-		assertTrue(Validator.checkLessEquals255("0"));
+		assertTrue(Validator.checkLessEquals255("040"));
 		assertTrue(Validator.checkLessEquals255("145"));
 		assertTrue(Validator.checkLessEquals255("255"));
 		assertFalse(Validator.checkLessEquals255("256"));
